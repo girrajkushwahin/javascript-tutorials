@@ -1,0 +1,37 @@
+.getElementBy.... (id,name,tag,etc)
+ALL html/js events
+Ajax?
+ecmascript 5/6 all keywords
+
+
+
+disadvantages of callback hell?
+xml?
+
+json.parse
+json.stringyfy
+json()/response.json() -> what it returns?    // dobut
+
+foreach not work with async method
+async/await, promises in javascript?
+
+rest operator
+ECMAScript2017 (async await imp)
+ECMAScript2018 features (some properties)
+JSON.Stringyfy (2019)
+ECMAScript2020
+
+Array.prototype.flat() ?
+flatmap()?
+trimStart & trimEnd ?
+
+How to create an API? & postman tool? (hosting -node,express,mongodb,mongoose)
+types of API?
+XMLhttprequest technology?
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+Ajax?
+.insertAdjacentHTML() method?
+
+How to create promises in js?
+
+cors in js (api related)?

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inner class in JS</title>
+        <meta charset="utf-8" />
+        <script>
+            function OuterClass() {
+                
+            // Property x of OuterClass
+            this.x = 0; 
+            this.y = 30;
+                
+            // Assign the variable objOuterClass the address 
+           // of the particular instance of OuterClass
+            var objOuterClass = this; 
+                
+            // Inner class
+            function InnerClass() {
+              this.z = 10;
+              this.someFuncton = function () {
+                  alert("inner class function");
+                    }; 
+                      
+             // Assign the address of the anonymous function.
+             // to access the value of property of outer class 
+             // in inner class.
+               this.accessOuter = function () {
+                  alert("value of x property:" + objOuterClass.x);
+                    };
+             } 
+                
+                // InnerClass ends to access the inner class 
+                // properties or methods.
+                this.innerObj = new InnerClass();
+            }
+  
+          function show() {
+             var outerClassObj = new OuterClass();
+            alert("Inner class Property z:" + outerClassObj.innerObj.z);
+            }
+        </script>
+    </head>
+  
+    <body>
+        <button type="button" onclick="show()">
+         Click Me
+        </button>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event propagation</title>
+    <style>
+        .firstdiv{
+            background-color: red;
+            margin-top: 100px;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding: 150px;
+        }
+        .seconddiv{
+            background-color: aqua;
+            padding:150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="firstdiv">
+        <div class="seconddiv"></div>
+    </div>
+    <script>
+        let div1=document.querySelector('.firstdiv');
+        let div2=document.querySelector('.seconddiv');
+        div1.addEventListener('click',div1fun); // true can passed at third place for event capturing phase
+        div2.addEventListener('click',div2fun);
+        function div1fun(){
+            alert("div1 method");
+        }
+        function div2fun(){
+            alert("div2 method");
+            event.stopPropagation();
+        }
+    </script>
+</body>
+</html>

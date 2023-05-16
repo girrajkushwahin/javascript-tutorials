@@ -1,0 +1,28 @@
+-> lexical this in arrow method?
+-> this vs lexical this working?
+
+conditionals,loops, foreach?
+arrow method vs normal method?
+events/handling events/
+
+spread operator
+destructuring (array, objects)
+
+packages like react router dom work for import export js?
+
+asynchronous nature of js?
+callback working
+promises 
+async await
+map(imp), filter, reduce
+
+react specific concepts (hooks, components etc)
+
+named imports vs default imports in react?
+
+-> sockets in js?
+
+web RTC? for real time communication app
+
+referencing or dereferencing operator?
+in js, creating obj form obj? how?

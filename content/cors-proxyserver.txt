@@ -1,0 +1,6 @@
+"proxy":"http://localhost:8000", // for react app when getting cors error while connecting server
+
+cors
+strict origin when cross origin ( referrer policy )
+access control allow origin
+etc.

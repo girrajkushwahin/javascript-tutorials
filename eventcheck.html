@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event_check</title>
+</head>
+<body>
+    <button id="b1" onclick="alert('its alert but few use me')">button1</button> <br><br>
+    <button id="b2" onclick="myfun2()">button2</button>  <br><br>
+    <button id="b3">button3</button><br><br>
+    <button id="b4">button4</button><br>
+    <h3>Event object</h3><br>
+    <button id="b5">button5</button><br>
+    <h3>mouse_events</h3><br>
+    <p id="mevent" onmouseup="mouseup()" onmousedown="mousedown()">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur iusto, placeat excepturi doloremque corporis aliquid culpa voluptatem cupiditate possimus maiores incidunt eligendi sit. Beatae odit iusto deleniti, alias iure sapiente obcaecati, labore accusantium nisi sit perspiciatis fugit dolorum incidunt ipsam.
+    </p><br>
+    <p>keyboard events</p><br>
+    <input type="text" onkeypress="keypress()" onkeydown="keydown()" onkeyup="keyup()" placeholder="enter text "><br>
+    <p id="para1"></p><br>
+    <p id="para2"></p><br>
+    <h3>want to know my name?</h3>
+    <p id="myname"></p>
+    <button id="btn">submit</button><br>
+    <h3>want to fire or stop Event?</h3>
+    <button onclick="myvar=setTimeout(myfun1,3000)">trynow</button>
+    <button onclick="clearTimeout(myvar)">stopnow</button><br>
+    <h3>Interval Event</h3>
+    <p id="para3">can you stop me when i reach 10</p><br>
+    <button id="btn2">start</button>
+    <button id="btn3">stop</button>
+    <script>
+        const myfun2=()=>alert("most common way of writing functions");
+        const third=document.getElementById("b3");
+        third.onclick=()=>alert("most common way of writing functions again");
+        // third.onclick=()=>console.log("most common way of writing functions again");
+        const fourth=document.querySelector("#b4");
+        fourth.addEventListener('click',()=>alert("i love this way of writing"));
+        // fourth.addEventListener('click',()=>console.log("i love this way of writing"));
+        const fifth=document.getElementById("b5");
+        checkevent= ()=>{
+            alert("you are watching event object");
+            console.log(event);
+            console.log(event.target);
+            console.log(event.type);
+        }
+        fifth.addEventListener('click',checkevent);
+        function mouseup(){
+            document.getElementById("mevent").style.color="blue";
+        }
+        function mousedown(){
+            document.getElementById("mevent").style.color="red";
+        }
+        const keypress= ()=>{
+            document.getElementById("para1").innerHTML=`you pressed ${event.key} and it's code is ${event.code}`;
+        }
+        const keydown= ()=>{
+            document.getElementById("para2").innerHTML="key is down";
+        }
+        const keyup= ()=>{
+            document.getElementById("para2").innerHTML="key is up";
+        }
+        const myname=document.querySelector('#myname');
+        const mybutton=document.querySelector('#btn');
+        const magic= () => {
+            myname.innerHTML="loading bhai..."
+            setTimeout(() => {
+                myname.innerHTML="This is ECMA Script"
+            },1000);
+        }
+        mybutton.addEventListener('click',magic);
+        function myfun1(){
+            alert("Event Fired");
+        }
+        const mynum=document.querySelector('#para3');
+        const mybtn=document.querySelector('#btn2');
+        const mybtn2=document.querySelector('#btn3');
+        let num=0;
+        const startnum= () => {
+            mynum.innerHTML='loading bhai...';
+            timref=setInterval(() => {
+                mynum.innerHTML=`${num}`;
+                num++;
+            },1000);
+        }
+        mybtn.addEventListener('click',startnum);
+        mybtn2.addEventListener('click',()=>{
+            clearInterval(timref);
+        });
+    </script>
+</body>
+</html>
