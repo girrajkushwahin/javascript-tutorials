@@ -10,7 +10,7 @@
 // typeof	var	void	while	with yield
 
 
-
+//girraj kushwah
 // var myNumber=9876543210;
 // var myName="Girraj";
 // console.log(isNaN(myNumber));
@@ -422,8 +422,8 @@
 
 // const Indexmonth=myArray.indexOf("march");
 // if(Indexmonth!=-1){
-    // const month=myArray.splice(Indexmonth,1,"March");
-    // console.log(myArray);
+// const month=myArray.splice(Indexmonth,1,"March");
+// console.log(myArray);
 // }else{
 //     console.log("No such data found");
 // }
