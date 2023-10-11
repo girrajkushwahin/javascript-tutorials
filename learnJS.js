@@ -10,7 +10,7 @@
 // typeof	var	void	while	with yield
 
 
-// Girraj Kushwah
+
 // var myNumber=9876543210;
 // var myName="Girraj";
 // console.log(isNaN(myNumber));
@@ -422,8 +422,8 @@
 
 // const Indexmonth=myArray.indexOf("march");
 // if(Indexmonth!=-1){
-// const month=myArray.splice(Indexmonth,1,"March");
-// console.log(myArray);
+    // const month=myArray.splice(Indexmonth,1,"March");
+    // console.log(myArray);
 // }else{
 //     console.log("No such data found");
 // }
@@ -975,7 +975,7 @@
 // Event capturing - with event capturing, the event is first captured by the outermost element and propagated to the inner elements. capturing is also called 'trickling' which helps remember the propagation order.
 
 // Higher order function
-// function which takes another function as an argument is called Higher order function. ????
+// function which takes another function as an argument is called Higher order function.
 
 // Callback function
 // function which get passed as an argument to another function is called callback function.
