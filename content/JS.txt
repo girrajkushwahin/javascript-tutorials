@@ -10,7 +10,7 @@ xml?
 
 json.parse
 json.stringyfy
-json()/response.json() -> what it returns?    // dobut
+json()/response.json() -> what it returns? (returns promise)   // dobut
 
 foreach not work with async method
 async/await, promises in javascript?
