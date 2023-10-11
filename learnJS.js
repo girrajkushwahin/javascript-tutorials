@@ -10,7 +10,6 @@
 // typeof	var	void	while	with yield
 
 
-//girraj kushwah
 // var myNumber=9876543210;
 // var myName="Girraj";
 // console.log(isNaN(myNumber));
