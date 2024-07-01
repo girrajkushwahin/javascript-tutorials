@@ -384,7 +384,7 @@
 // console.log(count);
 // console.log(myArray);
 
-// 9. unshift() // add elements at the end of array and returns the new length of array
+// 9. unshift() // add elements at the beginning of array and returns the new length of array
 // let myArray=["ankit","girraj","arun","ankit","sankalp"];
 // const count=myArray.unshift("jajpal","jeetendra");
 // console.log(count);
@@ -508,8 +508,8 @@
 // let myName="Girraj Kushwah";
 // console.log(myName.length);
 
-// 2. Escape character//backslash \ escape character turns special characters into string characters
-// let anyquery="we are called \"indians\" form Asia"
+// 2. Escape character/ backslash \ escape character turns special characters into string characters
+// let anyquery = "we are called \"indians\" from Asia"
 // console.log(anyquery);
 
 // if you don't want to mess, simply use alternative quotes
@@ -639,7 +639,7 @@
 // -> new Date(milliseconds)
 // we cannot avoid month section
 
-// -> new Date(date string)
+// -> new Date("date string")
 
 // 1. new Date() // creating Date object with Date() constructor of Date class
 // let currdate=new Date();
@@ -791,7 +791,7 @@
 // onkeypress, onkeydown, (onkeyup - ?)...
 
 // InputEvents in javascript
-// the onchange event ocurs when the value of an element has een changed
+// the onchange event ocurs when the value of an element has been changed
 // for radio buttons and checkboxes, the onchange event occurs when the checked state has been changed
 // onchange
 

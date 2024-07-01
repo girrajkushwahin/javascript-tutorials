@@ -25,4 +25,4 @@ named imports vs default imports in react?
 web RTC? for real time communication app
 
 referencing or dereferencing operator?
-in js, creating obj form obj? how?
+in js, creating obj fr0m obj? how?
