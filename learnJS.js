@@ -10,18 +10,18 @@
 // typeof	var	void	while	with yield
 
 
-// var myNumber=9876543210;
-// var myName="Girraj";
+// var myNumber = 9876543210;
+// var myName = "Girraj";
 // console.log(isNaN(myNumber));
 // console.log(isNaN(myName));
-// if(isNaN(myName)){
+// if (isNaN(myName)) {
 //     console.log("please enter a valid mobile number");
 // }
 
 
 
-// console.log(NaN===NaN);                                             // #dobut
-// console.log(Number.NaN===NaN);
+// console.log(NaN === NaN);                                             // #dobut
+// console.log(Number.NaN === NaN);
 // console.log(isNaN(NaN));
 // console.log(isNaN(Number.NaN));
 // console.log(Number.isNaN(NaN));
@@ -319,14 +319,14 @@
 // }
 
 // for in loop -
-// myArray=["Girraj",20,true,"Tushar",21,false];
-// for(let elements in myArray){
+// myArray = ["Girraj", 20, true, "Tushar", 21, false];
+// for (let elements in myArray) {
 //     console.log(elements);
 // }
 
 // for of loop -
-// myArray=["Girraj",20,true,"Tushar",21,false];
-// for(let elements of myArray){
+// myArray = ["Girraj", 20, true, "Tushar", 21, false];
+// for (let elements of myArray) {
 //     console.log(elements);
 // }
 
@@ -340,7 +340,7 @@
 
 // array.length property returns length of the array
 
-// 1. indexOf()                            // returns -1 of none found
+// 1. indexOf()                            // returns -1 if none found
 // myArray=["Girraj",20,true,"Tushar",21,false];
 // console.log(myArray.indexOf(false,3));
 
@@ -365,7 +365,7 @@
 // let myArray=[100,150,200,300,400,500,550,660,700];
 // console.log(myArray.findIndex((element)=>element<500));
 
-// 6. filter() //returns all satisfied value in new array and returns empty array [] if none found
+// 6. filter() // returns all satisfied value in new array and returns empty array [] if none found
 // let myArray=[100,150,200,300,400,500,550,660,700];
 // console.log(myArray.filter((element,index)=>element<500));
 
