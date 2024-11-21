@@ -582,7 +582,7 @@
 // let str="hello world";
 // console.log(str.charAt(6));
 
-// 11. char CodeAt() // returns the unicode of the character at a specified index in a string
+// 11. charCodeAt() // returns the unicode of the character at a specified index in a string
 // it returns a UTF-16 code (integer between 0 to 65535)
 // let str="hello world";
 // console.log(str.charCodeAt(0));
@@ -891,8 +891,9 @@
 
 // ECMAScript 2017/ES8
 // string padding
-// object.values()
-// object.entires()
+// object.values() - returns an array of values of the object and it does not change the original object
+// object.keys() - returns an array of key-names of the object and it does not change the original object
+// object.entires() - returns an array of arrays where each inner array contains 2 elements i.e., key-value pair of object
 
 // let myname="Girraj".padStart(10);
 // console.log(myname);
@@ -911,7 +912,7 @@
 
 // ECMAScript2019/ES10
 // Array.prototype.{flat,flatmap}
-// Object.fromEntries()
+// Object.fromEntries() - it can take output of object.entires() as input and creates an object from a list of key/value pairs.
 
 // let myArr=[
 //     ["zone1","zone2"],
@@ -1007,7 +1008,7 @@
 // var myname;
 // myname="Girraj";
 
-// How it will be in output during creation phase-
+// How it will be in output during creation phase -
 // // var myname=undefined;
 // // console.log(myname);
 // // myname="Girraj";
@@ -1141,7 +1142,7 @@
 // JSON (JavaScript Object Notation)
 // JSON.stringify() turns a JavaScript object into JSON text and stores that JSON text in a string.
 // JSON.parse() turns a string of JSON text into a JavaScript object.
-//json() method (is it return promise?)                             //dobut
+//.json() method (is it return promise?)                             //dobut
 
 // let obj={
 //     key1:"Girraj",
